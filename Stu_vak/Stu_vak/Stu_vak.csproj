@@ -101,5 +101,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibStuVak\ClassLibStuVak.csproj">
+      <Project>{e732bc7a-39ef-4e39-876d-d6d31417952b}</Project>
+      <Name>ClassLibStuVak</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

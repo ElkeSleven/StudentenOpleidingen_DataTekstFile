@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Stu_vak"
+        Loaded="Window_Loaded"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
@@ -16,10 +17,9 @@
                 <MenuItem Header="Opslaan als CSV bestand" Name="opslaanAlsCsv" Click="opslaanAlsCsv_Click"/>
                 <MenuItem Header="Opslaan als TXT bestand" Name="opslaanAlsTxt" Click="opslaanAlsTxt_Click"/>
                 <MenuItem Header="Overzicht gegevens" Name="datavieuwAnderWindow" Click="datavieuwAnderWindow_Click"/>
-
             </MenuItem>
         </Menu>
 
-        <ListBox x:Name="LstStudent"  SelectionChanged="LstStudent_SelectionChanged"></ListBox>
+        <ListBox x:Name="LstStudent"></ListBox>
     </DockPanel>
 </Window>

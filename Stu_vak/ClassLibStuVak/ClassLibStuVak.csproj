@@ -41,14 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Stu_vak\Stu_vak.csproj">
-      <Project>{26ad35c5-bb7e-4884-bbde-c14f969a2b4e}</Project>
-      <Name>Stu_vak</Name>
-    </ProjectReference>
+    <Compile Include="Student.cs" />
+    <Compile Include="StudentenData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

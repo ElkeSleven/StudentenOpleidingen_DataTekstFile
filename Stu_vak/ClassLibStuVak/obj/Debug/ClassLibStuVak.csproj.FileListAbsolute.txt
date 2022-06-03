@@ -1,0 +1,6 @@
+C:\Users\elkes\OneDrive\Documents\GitHub\VoorBeeldEx-1Pro-Sem2-2022\Stu_vak\ClassLibStuVak\bin\Debug\ClassLibStuVak.dll
+C:\Users\elkes\OneDrive\Documents\GitHub\VoorBeeldEx-1Pro-Sem2-2022\Stu_vak\ClassLibStuVak\bin\Debug\ClassLibStuVak.pdb
+C:\Users\elkes\OneDrive\Documents\GitHub\VoorBeeldEx-1Pro-Sem2-2022\Stu_vak\ClassLibStuVak\obj\Debug\ClassLibStuVak.csproj.AssemblyReference.cache
+C:\Users\elkes\OneDrive\Documents\GitHub\VoorBeeldEx-1Pro-Sem2-2022\Stu_vak\ClassLibStuVak\obj\Debug\ClassLibStuVak.csproj.CoreCompileInputs.cache
+C:\Users\elkes\OneDrive\Documents\GitHub\VoorBeeldEx-1Pro-Sem2-2022\Stu_vak\ClassLibStuVak\obj\Debug\ClassLibStuVak.dll
+C:\Users\elkes\OneDrive\Documents\GitHub\VoorBeeldEx-1Pro-Sem2-2022\Stu_vak\ClassLibStuVak\obj\Debug\ClassLibStuVak.pdb

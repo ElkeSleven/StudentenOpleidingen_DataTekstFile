@@ -13,7 +13,7 @@
 
                 </MenuItem>
             </MenuItem>
-            <MenuItem Header="Student" Click="MenuItem_Click">
+            <MenuItem Header="Student" >
                 <MenuItem Header="Opslaan data bestand">
 
                 </MenuItem>
