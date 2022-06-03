@@ -20,7 +20,7 @@ namespace WpfPxl
     /// Interaction logic for DataOverzicht.xaml
     /// </summary>
     public partial class DataOverzicht : Window
-    {
+    {         // komt allen hierin als de 2de xaml word geopend 
         public DataOverzicht()
         {
             InitializeComponent();

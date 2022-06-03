@@ -31,7 +31,7 @@ namespace WpfPxl
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Student s;
+            Student s;                                                /// hier word de verkenner van de gebruiker geopende en moet hij de csv file aanduiden 
             Vak vk = new Vak();
             OpenFileDialog ofd = new OpenFileDialog
             {
@@ -44,7 +44,7 @@ namespace WpfPxl
             if (ofd.ShowDialog() == true)
             {
                 Databank.DataFolder = System.IO.Path.GetDirectoryName(ofd.FileName);
-                string[] kolommen;
+                string[] kolommen;                                                                      //// hier word de data uitgelezen gesplits door ";"
                 using (StreamReader sr = new StreamReader(ofd.FileName))
                 {
                     while (!sr.EndOfStream)
@@ -67,12 +67,15 @@ namespace WpfPxl
 
         }
 
+
+        //// messagebox met info als de gebruiker op een listItem klikt 
         private void LstStudent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int index = LstStudent.SelectedIndex;
             MessageBox.Show($" {Databank.ListStudenten[index].Voornaam.Substring(0, 1)}.{Databank.ListStudenten[index].Naam} volgt les in de afdeling{Databank.ListStudenten[index].VakVolledig.ToUpper()}", "Info student");
         }
 
+        //// opslaan van de file 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog()
@@ -95,18 +98,21 @@ namespace WpfPxl
                 }
             }
         }
-
+        //// opslaan data gegevens 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             if (Databank.DataFolder != string.Empty)
             {
-                string dataBestand = $"{Databank.DataFolder}\\data.xml";
+                string dataBestand = $"{Databank.DataFolder}\\data.xml";  /// XML ? 
                 Databank.DsStudent.WriteXml(dataBestand);
             }
         }
 
+
+        //// overzicht gegevens 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
+            //// opent nieuw window 
             DataOverzicht dWin = new DataOverzicht();
             dWin.ShowDialog();
         }
