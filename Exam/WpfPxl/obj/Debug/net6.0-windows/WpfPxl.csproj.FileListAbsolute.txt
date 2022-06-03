@@ -1,0 +1,58 @@
+C:\Users\vvvah\source\repos\Exam\WpfPxl\bin\Debug\net6.0-windows\WpfPxl.exe
+C:\Users\vvvah\source\repos\Exam\WpfPxl\bin\Debug\net6.0-windows\WpfPxl.deps.json
+C:\Users\vvvah\source\repos\Exam\WpfPxl\bin\Debug\net6.0-windows\WpfPxl.runtimeconfig.json
+C:\Users\vvvah\source\repos\Exam\WpfPxl\bin\Debug\net6.0-windows\WpfPxl.dll
+C:\Users\vvvah\source\repos\Exam\WpfPxl\bin\Debug\net6.0-windows\WpfPxl.pdb
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.csproj.AssemblyReference.cache
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\MainWpf.g.cs
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl_MarkupCompile.cache
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl_MarkupCompile.lref
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\MainWpf.baml
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.g.resources
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.AssemblyInfoInputs.cache
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.AssemblyInfo.cs
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.csproj.CoreCompileInputs.cache
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.dll
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\refint\WpfPxl.dll
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.pdb
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.genruntimeconfig.cache
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\ref\WpfPxl.dll
+C:\Users\vvvah\source\repos\Exam\WpfPxl\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\vvvah\source\repos\Exam\WpfPxl\bin\Debug\net6.0-windows\Pxl.dll
+C:\Users\vvvah\source\repos\Exam\WpfPxl\bin\Debug\net6.0-windows\Pxl.pdb
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.csproj.CopyComplete
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\DataOverzicht.g.cs
+C:\Users\vvvah\source\repos\Exam\WpfPxl\obj\Debug\net6.0-windows\DataOverzicht.baml
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\bin\Debug\net6.0-windows\WpfPxl.exe
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\bin\Debug\net6.0-windows\WpfPxl.deps.json
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\bin\Debug\net6.0-windows\WpfPxl.runtimeconfig.json
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\bin\Debug\net6.0-windows\WpfPxl.dll
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\bin\Debug\net6.0-windows\WpfPxl.pdb
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\bin\Debug\net6.0-windows\DocumentFormat.OpenXml.dll
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\bin\Debug\net6.0-windows\Pxl.dll
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\bin\Debug\net6.0-windows\Pxl.pdb
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.csproj.AssemblyReference.cache
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\DataOverzicht.g.cs
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\MainWpf.g.cs
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl_MarkupCompile.cache
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl_MarkupCompile.lref
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\DataOverzicht.baml
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\MainWpf.baml
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.g.resources
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.AssemblyInfoInputs.cache
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.AssemblyInfo.cs
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.csproj.CoreCompileInputs.cache
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.csproj.CopyComplete
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.dll
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\refint\WpfPxl.dll
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.pdb
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\WpfPxl.genruntimeconfig.cache
+C:\Users\elkes\OneDrive\Desktop\Semester 2\VisualStudio(2019)\vbex-kristof\Exam\WpfPxl\obj\Debug\net6.0-windows\ref\WpfPxl.dll
