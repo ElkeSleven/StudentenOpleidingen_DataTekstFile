@@ -15,7 +15,7 @@ namespace ClassLibStuVak
         public static string DataFolder = "";
         public static DataTable DataTableStudentenVak { get; set; }
         public static DataSet DsStudent = new DataSet("StudentenDB");
-
+      
         public static void LoadCSV(string padNaarCsv)
         {
             DataTableStudentenVak = new DataTable("DataTableStudentenVak");
