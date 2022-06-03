@@ -10,7 +10,7 @@ namespace Pxl
     public class Databank
     {
         public static string DataFolder = "";
-        public static DataSet DsStudent = new DataSet("StudentenDB");
+        public static DataSet DsStudent = new DataSet("student");
         public static Dictionary<string, string> DictVakken = new Dictionary<string, string>
                     {
                       {"PRO", "Programmeren" },

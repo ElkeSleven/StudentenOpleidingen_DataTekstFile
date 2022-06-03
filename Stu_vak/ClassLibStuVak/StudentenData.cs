@@ -21,12 +21,12 @@ namespace ClassLibStuVak
             DataTableStudentenVak = new DataTable("DataTableStudentenVak");
             if (padNaarCsv != null)
             {
-                DataTableStudentenVak = new DataTable("DtStuVak");
+                DataTableStudentenVak = new DataTable("DataTableStudentenVak");
 
 
                 DataTableStudentenVak.Columns.Add("Voornaam", typeof(string));
                 DataTableStudentenVak.Columns.Add("Achternaam", typeof(string));
-                DataTableStudentenVak.Columns.Add("VakCode", typeof(string));
+                DataTableStudentenVak.Columns.Add("Vakcode", typeof(string));
 
                 DsStudent.Tables.Add(DataTableStudentenVak);
 

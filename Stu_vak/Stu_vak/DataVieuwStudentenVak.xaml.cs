@@ -43,12 +43,40 @@ namespace Stu_vak
 
         private void SorterenOpNaam_Click(object sender, RoutedEventArgs e)
         {
+            x = StudentenData.GetDataView();
+            string columnaam = "Voornaam";
+            string letter = "P";
+            x.Sort = $"{columnaam} desc";
+            x.RowFilter = $"{columnaam} like '{letter}%'";
+            // === Afdruk in DataGrid
+            DgdStudenten.ItemsSource = x;
+            //== AFDRUK TxtResultaat                                // Select("Naam like 'P%'");
+            DataRow[] res = StudentenData.DataTableStudentenVak.Select($"{columnaam} like '{letter}%'");
+            TxtResultaat.Clear();
+            foreach (DataRow kolom in res)
+            {
+                TxtResultaat.Text += $"{kolom[1]} - {kolom[2]}\r\n";
+            }
+
 
         }
 
         private void SorterenOpProgrammeren_Click(object sender, RoutedEventArgs e)
         {
-
+            x = StudentenData.GetDataView();
+            string columnaam = "Voornaam";
+            string vakcode = "PRO";
+            x.Sort = $"{columnaam} desc";
+            x.RowFilter = $"Vakcode = '{vakcode}'";
+            // === Afdruk in DataGrid
+            DgdStudenten.ItemsSource = x;
+            //== AFDRUK TxtResultaat
+            DataRow[] res = StudentenData.DataTableStudentenVak.Select("Vakcode = '{vakcode}'"); 
+            TxtResultaat.Clear();
+            foreach (DataRow kolom in res)
+            {
+                TxtResultaat.Text += $"{kolom[1]} - {kolom[2]}\r\n";
+            }
         }
     }
 }

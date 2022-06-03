@@ -81,6 +81,8 @@ namespace WpfPxl
             dvStud.RowFilter = null;
             dvStud.Sort = "Naam";
             TxtResultaat.Clear();
+
+
         }
     }
 }
