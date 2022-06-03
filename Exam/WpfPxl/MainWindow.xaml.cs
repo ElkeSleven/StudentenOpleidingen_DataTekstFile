@@ -72,7 +72,9 @@ namespace WpfPxl
         private void LstStudent_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int index = LstStudent.SelectedIndex;
-            MessageBox.Show($" {Databank.ListStudenten[index].Voornaam.Substring(0, 1)}.{Databank.ListStudenten[index].Naam} volgt les in de afdeling{Databank.ListStudenten[index].VakVolledig.ToUpper()}", "Info student");
+            MessageBox.Show($" {Databank.ListStudenten[index].Voornaam.Substring(0, 1)}." +
+                $"{Databank.ListStudenten[index].Naam} volgt les in de afdeling" +
+                $"{Databank.ListStudenten[index].VakVolledig.ToUpper()}", "Info student");
         }
 
         //// opslaan van de file 

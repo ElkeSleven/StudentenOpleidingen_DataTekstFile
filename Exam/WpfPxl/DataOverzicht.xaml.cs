@@ -52,7 +52,7 @@ namespace WpfPxl
             TxtResultaat.Clear();
             foreach (DataRow kolom in res)
             {
-                TxtResultaat.Text += $"{kolom[1],-15} - {kolom[2]}\r\n";
+                TxtResultaat.Text += $"{kolom[1]} - {kolom[2]}\r\n";
             }
         }
 

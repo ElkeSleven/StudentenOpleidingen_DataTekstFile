@@ -41,7 +41,7 @@ namespace Stu_vak
             };
             if(padNaarCsv.ShowDialog() == true)
             {
-
+                StudentenData.DataFolder = System.IO.Path.GetDirectoryName(padNaarCsv.FileName);
                 StudentenData.LoadCSV(padNaarCsv.ToString());
                 using (StreamReader sr = new StreamReader(padNaarCsv.FileName))
                 {
@@ -72,17 +72,42 @@ namespace Stu_vak
 
         private void datavieuwAnderWindow_Click(object sender, RoutedEventArgs e)
         {
-
+            //// opent nieuw window 
+            DataVieuwStudentenVak dWin = new DataVieuwStudentenVak();
+            dWin.ShowDialog();
         }
 
-        private void opslaanAlsTxt_Click(object sender, RoutedEventArgs e)
+        private void opslaanAlsXml_Click(object sender, RoutedEventArgs e)
         {
-
+            if (StudentenData.DataFolder != string.Empty)
+            {
+                string dataBestand = $"{StudentenData.DataFolder}\\data.xml";  /// XML ? 
+                StudentenData.DsStudent.WriteXml(dataBestand);
+            }
         }
 
         private void opslaanAlsCsv_Click(object sender, RoutedEventArgs e)
         {
-
+            SaveFileDialog padNaarSavedCsv = new SaveFileDialog()
+            {
+                Filter = "Alle bestanden (*.*)|*.*|Tekstbestanden (*.csv)|*.csv",
+                FilterIndex = 2,
+                Title = "Geef een bestandsnaam op",
+                OverwritePrompt = true, //Bevestiging wordt gevraagd bij overschrijven van een bestand.
+                AddExtension = true, // Extensie wordt toegevoegd.
+                //InitialDirectory = Databank.DataFolder
+            };
+            if (padNaarSavedCsv.ShowDialog() == true)
+            {
+                
+                using (StreamWriter sw = new StreamWriter(padNaarSavedCsv.FileName))
+                {
+                    foreach (Student stud in StudentenData.ListStudenten)
+                    {
+                        sw.WriteLine($"{stud.Voornaam};{stud.Achternaam};{stud.Vakcode}");
+                    }
+                }
+            }
         }
 
       

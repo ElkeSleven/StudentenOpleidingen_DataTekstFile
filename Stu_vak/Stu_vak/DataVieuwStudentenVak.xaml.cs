@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibStuVak;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,5 +24,13 @@ namespace Stu_vak
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            DgdStudenten.ItemsSource = StudentenData.GetDataView();
+        }
+
+
+
     }
 }

@@ -15,8 +15,8 @@
             </MenuItem>
             <MenuItem Header="Student">
                 <MenuItem Header="Opslaan als CSV bestand" Name="opslaanAlsCsv" Click="opslaanAlsCsv_Click"/>
-                <MenuItem Header="Opslaan als TXT bestand" Name="opslaanAlsTxt" Click="opslaanAlsTxt_Click"/>
-                <MenuItem Header="Overzicht gegevens" Name="datavieuwAnderWindow" Click="datavieuwAnderWindow_Click"/>
+                <MenuItem Header="Opslaan als Xml bestand" Name="opslaanAlsXml" Click="opslaanAlsXml_Click"/>
+                <MenuItem Header="DataVieuw Weergeven" Name="datavieuwAnderWindow" Click="datavieuwAnderWindow_Click"/>
             </MenuItem>
         </Menu>
 

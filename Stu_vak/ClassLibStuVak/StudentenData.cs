@@ -12,6 +12,7 @@ namespace ClassLibStuVak
         // read csv file LoadCSV
         // set vakcode to vakVoluit 
         // Student = new Student(.. .. .. .)
+        public static string DataFolder = "";
         public static DataTable DataTableStudentenVak { get; set; }
         public static DataSet DsStudent = new DataSet("StudentenDB");
 

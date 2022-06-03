@@ -5,27 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Stu_vak"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="DataVieuwStudentenVak" Height="450" Width="800">
-    <DockPanel>
-        <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Bestand">
-                <MenuItem Header="Afsluiten">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="500"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label FontSize="10"  Padding="10 2" Margin="0 5 0 0">Studenten</Label>
+            <DataGrid x:Name="DgdStudenten" Height="260" Margin="5"></DataGrid>
+            <Label FontSize="10" Padding=" 10 2">Vakken</Label>
+            <DataGrid x:Name="dgdVakken" Height="110" Margin="5"></DataGrid>
 
-                </MenuItem>
-            </MenuItem>
-            <MenuItem Header="Student" >
-                <MenuItem Header="Opslaan data bestand">
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="10">
+            <Button Width="150" Height="25" Margin="0 5 0 0" Name="SorterenOpProgrammeren">Programmeren</Button>
+            <Button Width="150" Height="25" Margin="0 5 0 5" Name="">Naam</Button>
+            <Button Width="150" Height="25" Margin="0 0 0 0" >Reset</Button>
+            <TextBox x:Name="TxtResultaat" Margin="0 10 0 0" Height="310" Width="260"></TextBox>
+        </StackPanel>
 
-                </MenuItem>
-                <MenuItem Header="Opslaan CSV bestand">
-
-                </MenuItem>
-                <MenuItem Header="Overzicht gegevens">
-
-                </MenuItem>
-
-
-            </MenuItem>
-        </Menu>
-    </DockPanel>
+    </Grid>
 </Window>

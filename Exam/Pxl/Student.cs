@@ -23,6 +23,8 @@ namespace Pxl
             }
         }
         public DataTable DtStudent { get; set; }
+
+        //studentenData.cs
         public override void Initialiseer()
         {
             string tableName = "student";   ///// hier word de tabel naam aangemaakt  
@@ -44,11 +46,13 @@ namespace Pxl
             }
 
         }
+        //  student.cs
         public string Voornaam { get; set; }
         public string Naam { get; set; }
         public string VakCode { get; set; }
         public string VakVolledig => Databank.DictVakken[VakCode];
-        
+       
+        // studentenData.cs
         public void VoegRijToe()    //// hier worden de gegevens van de student als een DataRow toegevoegd
         {
             DataRow dr = DtStudent.NewRow();  ////  hier gaan we naar een nieuwe rij in de DtStudent =  DataTable 
@@ -57,15 +61,9 @@ namespace Pxl
             dr["VakCode"] = VakCode;
             DtStudent.Rows.Add(dr);   //// rij word toegevoed aan de DtStudent  = DataTable
         }
-        public override string ToString()   ////  hier komt de app in na het itereren van het hele csv bestand 
-                                            //// het itereert vervolgens voor alle waarden van het csv bestand hier door 
-        {                                    //// hierna is de ophet de wpf
 
-                                             //// bij het opslaan van de gegevens in een csv bestand 
-                                             //// bij data bestand 
-                                             /// bij het overgaan naar 2de xaml 
-            return $"{Voornaam} {Naam.ToUpper()} - {VakCode.ToUpper()} ({VakVolledig.ToLower()})";
-        }
+        //// student.cs
+     
 
        
     }
