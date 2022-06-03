@@ -110,6 +110,9 @@ namespace Stu_vak
             }
         }
 
-      
+        private void afsluiten_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

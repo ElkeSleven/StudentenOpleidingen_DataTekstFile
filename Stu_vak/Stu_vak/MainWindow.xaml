@@ -10,7 +10,7 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Bestand">
-                <MenuItem Header="Afsluiten"/>
+                <MenuItem Header="Afsluiten" Name="afsluiten" Click="afsluiten_Click"/>
 
             </MenuItem>
             <MenuItem Header="Student">

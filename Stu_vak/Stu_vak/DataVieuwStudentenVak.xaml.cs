@@ -31,7 +31,6 @@ namespace Stu_vak
         {
             DgdStudenten.ItemsSource = StudentenData.GetDataView();
         }
-
         private void ResetDataVieuw_Click(object sender, RoutedEventArgs e)
         {
             x = StudentenData.GetDataView();
@@ -40,7 +39,6 @@ namespace Stu_vak
             x.Sort = "Voornaam";
             TxtResultaat.Clear();
         }
-
         private void SorterenOpNaam_Click(object sender, RoutedEventArgs e)
         {
             x = StudentenData.GetDataView();
@@ -60,7 +58,6 @@ namespace Stu_vak
 
 
         }
-
         private void SorterenOpProgrammeren_Click(object sender, RoutedEventArgs e)
         {
             x = StudentenData.GetDataView();
@@ -78,5 +75,8 @@ namespace Stu_vak
                 TxtResultaat.Text += $"{kolom[1]} - {kolom[2]}\r\n";
             }
         }
+        
+
+
     }
 }
