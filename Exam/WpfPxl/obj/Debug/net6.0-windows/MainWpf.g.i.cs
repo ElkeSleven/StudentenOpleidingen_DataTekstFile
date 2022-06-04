@@ -53,7 +53,7 @@ namespace WpfPxl {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfPxl;component/mainwpf.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfPxl;V1.0.0.0;component/mainwpf.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MainWpf.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

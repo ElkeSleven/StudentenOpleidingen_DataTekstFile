@@ -77,7 +77,7 @@ namespace WpfPxl {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfPxl;component/dataoverzicht.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfPxl;V1.0.0.0;component/dataoverzicht.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\DataOverzicht.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

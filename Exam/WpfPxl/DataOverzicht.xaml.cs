@@ -84,5 +84,10 @@ namespace WpfPxl
 
 
         }
+
+        private void TxtResultaat_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

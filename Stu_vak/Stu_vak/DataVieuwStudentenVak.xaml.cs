@@ -50,15 +50,16 @@ namespace Stu_vak
             DgdStudenten.ItemsSource = x;
             //== AFDRUK TxtResultaat                                // Select("Naam like 'P%'");
             DataRow[] res = StudentenData.DataTableStudentenVak.Select($"{columnaam} like '{letter}%'");
+            
             TxtResultaat.Clear();
-            foreach (DataRow kolom in res)
+                foreach (DataRow kolom in res)
             {
                 TxtResultaat.Text += $"{kolom[1]} - {kolom[2]}\r\n";
             }
 
 
         }
-        private void SorterenOpProgrammeren_Click(object sender, RoutedEventArgs e)
+        private void SorterenOpVakcode_Click(object sender, RoutedEventArgs e)
         {
             x = StudentenData.GetDataView();
             string columnaam = "Voornaam";
@@ -68,15 +69,27 @@ namespace Stu_vak
             // === Afdruk in DataGrid
             DgdStudenten.ItemsSource = x;
             //== AFDRUK TxtResultaat
-            DataRow[] res = StudentenData.DataTableStudentenVak.Select("Vakcode = '{vakcode}'"); 
+            DataRow[] res = StudentenData.DataTableStudentenVak.Select($"Vakcode = '{vakcode}'");
             TxtResultaat.Clear();
             foreach (DataRow kolom in res)
             {
                 TxtResultaat.Text += $"{kolom[1]} - {kolom[2]}\r\n";
             }
         }
-        
 
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            MessageBoxResult resaltaat = MessageBox.Show("ben je zeker dat je de app wil afsluiten ?  ", "Afluiten ? ", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            //MessageBox.Show(resaltaat.ToString());
+            if (MessageBoxResult.Yes == resaltaat)
+            {
+                Close();
+            }
+        }
 
+        private void mnuAfsluiten_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
