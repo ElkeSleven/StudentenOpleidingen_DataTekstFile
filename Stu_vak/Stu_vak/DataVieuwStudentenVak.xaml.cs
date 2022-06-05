@@ -22,15 +22,23 @@ namespace Stu_vak
     public partial class DataVieuwStudentenVak : Window
     {
         
+        //**
         public DataVieuwStudentenVak()
         {
             InitializeComponent();
         }
+
+        //**
         private DataView x;
+
+        //**DataGrid inladen met gegevens 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             DgdStudenten.ItemsSource = StudentenData.GetDataView();
         }
+
+
+        //**Sort 
         private void ResetDataVieuw_Click(object sender, RoutedEventArgs e)
         {
             x = StudentenData.GetDataView();
@@ -39,6 +47,8 @@ namespace Stu_vak
             x.Sort = "Voornaam";
             TxtResultaat.Clear();
         }
+
+        //**Sort ***
         private void SorterenOpNaam_Click(object sender, RoutedEventArgs e)
         {
             x = StudentenData.GetDataView();
@@ -59,6 +69,8 @@ namespace Stu_vak
 
 
         }
+
+        //**Sort ***
         private void SorterenOpVakcode_Click(object sender, RoutedEventArgs e)
         {
             x = StudentenData.GetDataView();
@@ -77,16 +89,16 @@ namespace Stu_vak
             }
         }
 
+        //**Close ***** MessageBox
         private void Window_Closed(object sender, EventArgs e)
         {
             MessageBoxResult resaltaat = MessageBox.Show("ben je zeker dat je de app wil afsluiten ?  ", "Afluiten ? ", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            //MessageBox.Show(resaltaat.ToString());
             if (MessageBoxResult.Yes == resaltaat)
             {
                 Close();
             }
         }
-
+        //**close 
         private void mnuAfsluiten_Click(object sender, RoutedEventArgs e)
         {
             Close();

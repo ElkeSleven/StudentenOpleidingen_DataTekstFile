@@ -28,6 +28,7 @@ namespace Stu_vak
             InitializeComponent();
         }
 
+        //** initaliseer datatable 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             Student s;
@@ -69,7 +70,7 @@ namespace Stu_vak
         }
 
 
-
+        //**open window 
         private void datavieuwAnderWindow_Click(object sender, RoutedEventArgs e)
         {
             //// opent nieuw window 
@@ -77,6 +78,7 @@ namespace Stu_vak
             dWin.ShowDialog();
         }
 
+        //**Save as Xlm
         private void opslaanAlsXml_Click(object sender, RoutedEventArgs e)
         {
             if (StudentenData.DataFolder != string.Empty)
@@ -86,6 +88,8 @@ namespace Stu_vak
             }
         }
 
+
+        //**Save as Csv 
         private void opslaanAlsCsv_Click(object sender, RoutedEventArgs e)
         {
             SaveFileDialog padNaarSavedCsv = new SaveFileDialog()
@@ -110,6 +114,8 @@ namespace Stu_vak
             }
         }
 
+
+        //**Close
         private void afsluiten_Click(object sender, RoutedEventArgs e)
         {
             Close();
