@@ -44,6 +44,7 @@ namespace Stu_vak
             {
                 StudentenData.DataFolder = System.IO.Path.GetDirectoryName(padNaarCsv.FileName);
                 StudentenData.LoadCSV(padNaarCsv.ToString());
+                VakData.LoadCSV(padNaarCsv.ToString());
                 using (StreamReader sr = new StreamReader(padNaarCsv.FileName))
                 {
                     while (!sr.EndOfStream)
@@ -114,20 +115,17 @@ namespace Stu_vak
             }
         }
 
-        //**Close ***** MessageBox
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            MessageBoxResult resaltaat = MessageBox.Show("ben je zeker dat je de app wil afsluiten ?  ", "Afluiten ? ", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (MessageBoxResult.Yes == resaltaat)
-            {
-                this.Close();
-            }
-        }
+
 
         //**Close
         private void afsluiten_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            MessageBoxResult resaltaat = MessageBox.Show("ben je zeker dat je de app wil afsluiten ?  ", "Afluiten ? ", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (MessageBoxResult.Yes == resaltaat)
+            {
+                MainWindow mainWindow = this;
+                mainWindow.Close();
+            }
         }
     }
 }

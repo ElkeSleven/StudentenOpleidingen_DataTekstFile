@@ -18,7 +18,7 @@ namespace ClassLibStuVak
       
         public static void LoadCSV(string padNaarCsv)
         {
-            DataTableStudentenVak = new DataTable("DataTableStudentenVak");
+           // DataTableStudentenVak = new DataTable("DataTableStudentenVak");
             if (padNaarCsv != null)
             {
                 DataTableStudentenVak = new DataTable("DataTableStudentenVak");
