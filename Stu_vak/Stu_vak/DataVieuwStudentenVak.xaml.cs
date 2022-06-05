@@ -30,15 +30,32 @@ namespace Stu_vak
 
         //**
         private DataView x;
-
+     
         //**DataGrid inladen met gegevens 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             DgdStudenten.ItemsSource = StudentenData.GetDataView();
+            VulComboBox();
         }
 
+        //** CombomboBox met waarde vullen 
+        private void VulComboBox()
+        {
 
-        //**Sort 
+            DataRow[] res = StudentenData.DataTableStudentenVak.Select();
+
+            foreach (DataRow kolom in res)
+            {
+                if (!comboBoxVak.Items.Contains(kolom[2].ToString()))
+                {
+                    comboBoxVak.Items.Add(kolom[2].ToString());
+                }
+
+            }
+
+        }
+
+        //**Sort ***
         private void ResetDataVieuw_Click(object sender, RoutedEventArgs e)
         {
             x = StudentenData.GetDataView();
@@ -51,53 +68,63 @@ namespace Stu_vak
         //**Sort ***
         private void SorterenOpNaam_Click(object sender, RoutedEventArgs e)
         {
-            x = StudentenData.GetDataView();
-            string columnaam = "Voornaam";
-            string letter = "P";
-            x.Sort = $"{columnaam} desc";
-            x.RowFilter = $"{columnaam} like '{letter}%'";
-            // === Afdruk in DataGrid
-            DgdStudenten.ItemsSource = x;
-            //== AFDRUK TxtResultaat                                // Select("Naam like 'P%'");
-            DataRow[] res = StudentenData.DataTableStudentenVak.Select($"{columnaam} like '{letter}%'");
-            
-            TxtResultaat.Clear();
-                foreach (DataRow kolom in res)
+            if (!string.IsNullOrEmpty(txtLetter.Text) && txtLetter.Text.Length == 1 && !Int32.TryParse(txtLetter.Text, out int i))
             {
-                TxtResultaat.Text += $"{kolom[1]} - {kolom[2]}\r\n";
+                x = StudentenData.GetDataView();
+                string columnaam = "Voornaam";
+                string letter = txtLetter.Text;
+                x.Sort = $"{columnaam} desc";
+                x.RowFilter = $"{columnaam} like '{letter}%'";
+                // === Afdruk in DataGrid
+                DgdStudenten.ItemsSource = x;
+                //== AFDRUK TxtResultaat                                // Select("Naam like 'P%'");
+                DataRow[] res = StudentenData.DataTableStudentenVak.Select($"{columnaam} like '{letter}%'");
+
+                TxtResultaat.Clear();
+                foreach (DataRow kolom in res)
+                {
+                    TxtResultaat.Text += $"{kolom[1]} - {kolom[2]}\r\n";
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("ingave niet goed");
             }
 
 
         }
 
-        //**Sort ***
+        //**Sort ***  
         private void SorterenOpVakcode_Click(object sender, RoutedEventArgs e)
         {
-            x = StudentenData.GetDataView();
-            string columnaam = "Voornaam";
-            string vakcode = "PRO";
-            x.Sort = $"{columnaam} desc";
-            x.RowFilter = $"Vakcode = '{vakcode}'";
-            // === Afdruk in DataGrid
-            DgdStudenten.ItemsSource = x;
-            //== AFDRUK TxtResultaat
-            DataRow[] res = StudentenData.DataTableStudentenVak.Select($"Vakcode = '{vakcode}'");
-            TxtResultaat.Clear();
-            foreach (DataRow kolom in res)
+            if(comboBoxVak.SelectedIndex != -1)
             {
-                TxtResultaat.Text += $"{kolom[1]} - {kolom[2]}\r\n";
+                x = StudentenData.GetDataView();
+                string columnaam = "Voornaam";
+                string vakcode = comboBoxVak.SelectedValue.ToString();
+                x.Sort = $"{columnaam} desc";
+                x.RowFilter = $"Vakcode = '{vakcode}'";
+                // === Afdruk in DataGrid
+                DgdStudenten.ItemsSource = x;
+
+
+
+                //== AFDRUK TxtResultaat
+                DataRow[] res = StudentenData.DataTableStudentenVak.Select($"Vakcode = '{vakcode}'");
+                TxtResultaat.Clear();
+                foreach (DataRow kolom in res)
+                {
+                    TxtResultaat.Text += $"{kolom[1]} - {kolom[2]}\r\n";
+                }
+            }
+            else
+            {
+                MessageBox.Show("eerst een vakcode in de combobox silecteren");
             }
         }
 
-        //**Close ***** MessageBox
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            MessageBoxResult resaltaat = MessageBox.Show("ben je zeker dat je de app wil afsluiten ?  ", "Afluiten ? ", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (MessageBoxResult.Yes == resaltaat)
-            {
-                Close();
-            }
-        }
+   
         //**close 
         private void mnuAfsluiten_Click(object sender, RoutedEventArgs e)
         {

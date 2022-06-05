@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Stu_vak"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Closed="Window_Closed"
+       
         Title="DataVieuwStudentenVak" Height="550" Width="800">
     <Window.Resources>
         <Style TargetType="Button">
