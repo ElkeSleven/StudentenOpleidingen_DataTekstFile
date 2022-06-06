@@ -16,6 +16,9 @@ namespace ClassLibStuVak
         public static DataTable DataTableStudentenVak { get; set; }
         public static DataSet DsStudent = new DataSet("StudentenDB");
       
+
+
+        //**tabelnaam aanmaken 
         public static void LoadCSV(string padNaarCsv)
         {
            // DataTableStudentenVak = new DataTable("DataTableStudentenVak");
@@ -30,6 +33,7 @@ namespace ClassLibStuVak
 
                 DsStudent.Tables.Add(DataTableStudentenVak);
 
+
             }
         }
         public static Student LoadRowCSV(string vakcode, string voornaam, string achtenaam)
@@ -42,6 +46,12 @@ namespace ClassLibStuVak
 
             return student;
         }
+
+
+
+
+
+
         public static void VoegRijToe(string voornaam, string achternaam, string vakcode)
         {
             DataRow dr = DataTableStudentenVak.NewRow();

@@ -36,6 +36,7 @@ namespace Stu_vak
         {
             DgdStudenten.ItemsSource = StudentenData.GetDataView();
             VulComboBox();
+            dgdVakken.ItemsSource = VakData.GetDataView();
         }
 
         //** CombomboBox met waarde vullen 
@@ -55,7 +56,7 @@ namespace Stu_vak
 
         }
 
-        //**Sort ***
+        //**Reset    Sort ***
         private void ResetDataVieuw_Click(object sender, RoutedEventArgs e)
         {
             x = StudentenData.GetDataView();

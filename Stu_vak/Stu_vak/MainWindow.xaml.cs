@@ -44,7 +44,9 @@ namespace Stu_vak
             {
                 StudentenData.DataFolder = System.IO.Path.GetDirectoryName(padNaarCsv.FileName);
                 StudentenData.LoadCSV(padNaarCsv.ToString());
-                VakData.LoadCSV(padNaarCsv.ToString());
+
+                LstStudent.ItemsSource = StudentenData.ListStudenten;
+
                 using (StreamReader sr = new StreamReader(padNaarCsv.FileName))
                 {
                     while (!sr.EndOfStream)
@@ -57,14 +59,16 @@ namespace Stu_vak
                         string achtenaam = csv[1];
                         string vakcode = csv[2];
 
-                       s = StudentenData.LoadRowCSV(vakcode, voornaam, achtenaam);
+                        s = StudentenData.LoadRowCSV(vakcode, voornaam, achtenaam);
                         StudentenData.VoegRijToe(voornaam, achtenaam, vakcode);
                         StudentenData.ListStudenten.Add(s);
                     }
-                    LstStudent.ItemsSource = StudentenData.ListStudenten;
 
                 }
+               
+
                 
+
             }
           
 
